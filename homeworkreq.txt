@@ -1,0 +1,8 @@
+1. identify and draw the lane lines on a few test images
+2. cut and paste the code into the block provided to run on a video stream
+3. refine the pipline with parameter tuning & averaging and extrapolating the lines
+4. writeup report
+5. check the Rubric!
+
+output looks like: P1_example.mp4
+Two videos: solidWhiteRight.mp4 solidYellowLeft.mp4
