@@ -25,26 +25,28 @@ The goals / steps of this project are the following:
 
 ### 1. Describe my pipeline. As part of the description, explain how my modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. 
+My pipeline consisted of 5 steps： 
 
-	First, I converted the images to grayscale, 
+First, I converted the images to grayscale, 
 
-	Then I use gaussian_blur to smooth the pciture and use canny for finding the edges
+Then I use gaussian_blur to smooth the pciture and use canny for finding the edges
 
-	After that, I start to define the region that need to be worked on, at this point I used two ways.
-			a) just the same as I learned in the class, I defined one region to work on.
-			b) Cause in the challenging part there is too many noise in the region between two lines, so I 	defined two regions with each of them containg just one line, in the same time, I mmodified the function region_of_interest and also the function draw_lines. 
-		To make things easier, I added an input parameter in function hough_lines named method, when "method" is 1, it will use two regions(b), otherwise, it use only one region(a). In my code, every function with a name which follow character "1" after the origin name is for two regions.
+After that, I start to define the region that need to be worked on, at this point I used two ways.
 
-	Then I used Hough transformation and out put the pictures.
+a) just the same as I learned in the class, I defined one region to work on.
+b) Cause in the challenging part there is too many noise in the region between two lines, so I 	defined two regions with each of them containg just one line, in the same time, I mmodified the function region_of_interest and also the function draw_lines. 
+
+To make things easier, I added an input parameter in function hough_lines named method, when "method" is 1, it will use two regions(b), otherwise, it use only one region(a). In my code, every function with a name which follow character "1" after the origin name is for two regions.
+
+Then I used Hough transformation and out put the pictures.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by the following steps:
 
-	1. calculate the angle of reach line in the lines with math.atan2()
-	2. kick out the line which is "not so verticle" by judging its angle and its x value on the bottom.
-	3. divide the lines into two groups by judging its angle a, lines with abs(a) < 0.5*pi are in the one group, others are in the one group. And in the meantime find the point with the lowest y value(on the uppest position).
-	4. calculating the average angle of each group
-	5. with the average angle and the uppest point I can draw one line from the uppest point to the bottom.
+1. calculate the angle of reach line in the lines with math.atan2()
+2. kick out the line which is "not so verticle" by judging its angle and its x value on the bottom.
+3. divide the lines into two groups by judging its angle a, lines with abs(a) < 0.5*pi are in the one group, others are in the one group. And in the meantime find the point with the lowest y value(on the uppest position).
+4. calculating the average angle of each group
+5. with the average angle and the uppest point I can draw one line from the uppest point to the bottom.
 
 To show that, I output every photos, the photo with the name beginning with "oneline_" is is the output of only one line in each side. As an example you can see the pictures below:
 
