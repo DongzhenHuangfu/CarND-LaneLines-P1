@@ -36,3 +36,10 @@ List of files
 7. P1.ipynb: code file
 8. P1.html: code file containing results
 9. writeup.md: brief intruduction to the code
+
+Note
+---
+
+This programm is only suitable for the case, that the camera is on the proper position of the car like the test image or video show. But it's enough for the most case.
+
+Further, the detectable lane lines must be straight, or at least almost straight in front of the car. 

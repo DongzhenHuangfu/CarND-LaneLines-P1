@@ -67,9 +67,13 @@ Another shortcoming could be: the line I draw for the dashed traffic line will b
 
 Further, if you look frame by frame in the challenging video you will find that, there is one part of the road, where the yellow line are hardly recognized, cause the gradient for the pixles are really low.
 
+What's more? Yeah it is only suitable for the case, that the camera on the right position of the car, and can only detect straight lane line.
+
 
 ### 3. Suggest possible improvements to my pipeline
 
 A possible improvement would be to make the line for the dashed traffic line more stable.
 
 Another potential improvement could be to try to make the yellow line in the challenging video more clear.
+
+And to be able to detect the lane line which is not almost straight will also be great for the driverless driving in the city.
