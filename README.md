@@ -13,12 +13,12 @@ Instructions
 
 The function can operate one the pictures or videos.
 
-To operate on the different image in the template _test_images_, just change the parameter `i` in [5] according to the list in [4].
+To operate on the different image in the template _test_images_, just change the parameter `i` in `[5]` according to the list in `[4]`.
 
 To operate on the different video in the template _video_images_, just run the code. If you want to operate it on the other video, you may:
 
 1. save the video in the template _video_images_
-2. use the same way like [8], [9] shown
+2. use the same way like `[8]`, `[9]` shown
 
 There are some functions which have the similar names, like `draw_line` and `draw_line1`, the difference between these functions are the different method they are using.
 
