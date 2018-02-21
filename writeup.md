@@ -74,6 +74,6 @@ What's more? Yeah it is only suitable for the case, that the camera on the right
 
 A possible improvement would be to make the line for the dashed traffic line more stable.
 
-Another potential improvement could be to try to make the yellow line in the challenging video more clear.
+Another potential improvement could be to try to make the yellow line in the challenging video more clear, for example maybe I can detect the yellow area in the region of interest and give it the pixel value 255 in grayscale, but this way may easily include some other niose. Or maybe there will be some helpful filters.
 
 And to be able to detect the lane line which is not almost straight will also be great for the driverless driving in the city.
